@@ -1,2 +1,2 @@
 # Calculator
-This is my Calculator for a project
+This calculator is a project focused for schools and young students
