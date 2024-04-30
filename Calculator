@@ -1,5 +1,6 @@
 exit = 'N'
 while (exit == "N"):
+#User selects an operation
     print('Select an operation to perform:')
     print('1. ADD')
     print('2. SUBTRACT')
@@ -8,27 +9,37 @@ while (exit == "N"):
 
     operation = input()
 
+#Adding operation code
     if operation == '1':
         num1 = input('Enter first number: ')
         num2 = input('Enter second number: ')
         print('The result is ' + str(float (num1) + float(num2)) )
+
+#Subtraction operation code
     elif operation == '2':
         num1 = input('Enter first number: ')
         num2 = input('Enter second number: ')
         print('The result is ' + str(float (num1) - float(num2)) )
+
+#Multiplication operation code
     elif operation == '3':
         num1 = input('Enter first number: ')
         num2 = input('Enter second number: ')
         print('The result is ' + str(float (num1) * float(num2)) )
+
+#Dividing operation code
     elif operation == '4':
         num1 = input('Enter first number: ')
         num2 = input('Enter second number: ')
         if float(num2) != 0:
             print('The result is ' + str(float(num1 / float(num2))))
+
+#Explains that division by zero is not possible
         else:
             print('Error: Division by zero not possible')
+            
     else:
         print('Invalid Entry!') 
-        
+#Asking user if wants to exit the calculator
     exit = input ('do you wish to exit (Y or N?: )')
 print ('Exiting calculator!')
